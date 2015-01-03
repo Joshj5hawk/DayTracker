@@ -13,7 +13,7 @@
 /.gradle
 /.settings
 /libs
-
+/crash-reports
 /mods
 /config
 /logs
