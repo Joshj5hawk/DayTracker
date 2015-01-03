@@ -18,7 +18,7 @@ public class DrawDay
 	}
 	
 	@SubscribeEvent
-	public void drawDay(RenderGameOverlayEvent.Text event)
+	public void drawDay(RenderGameOverlayEvent.Post event)
 	{
 		if (event.isCancelable() || event.type != ElementType.TEXT)
 		{
@@ -30,11 +30,13 @@ public class DrawDay
 	public void render(Minecraft minecraft)
 	{
 		WorldClient world = Minecraft.getMinecraft().theWorld;
-		int h = minecraft.displayHeight / 2;
-		int w = minecraft.displayWidth / 2;
+		int h = minecraft.displayHeight / 2; //y
+		int w = minecraft.displayWidth / 2; //x
 		int worldTime = (int)world.getWorldTime();
 		
-		minecraft.fontRendererObj.drawString("Day: " + (world.getWorldTime() < 24000 ? "1" : (world.getWorldTime() / 24000 + 1)), h, w, 0xffffff);
+		minecraft.fontRendererObj.drawString("Day: " + (world.getWorldTime() < 24000 ? "1" : (world.getWorldTime() / 24000 + 1)), w - 60 , h - 15, 0xffffff);
+		System.out.println("Height" + h);
+		System.out.println("Width" + w);
 		
 		if(ConfigurationFile.debug == true)
 		{
