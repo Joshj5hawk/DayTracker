@@ -7,14 +7,14 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-public class DrawDay extends Gui
+public class DrawTime extends Gui
 {
 	private Minecraft mc;
 	private int day;
 	private int hour;
 	private int minute;
 	private int second;
-	public DrawDay(Minecraft mc)
+	public DrawTime(Minecraft mc)
 	{
 		super();
 		this.mc = mc;
