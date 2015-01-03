@@ -35,8 +35,6 @@ public class DrawDay
 		int worldTime = (int)world.getWorldTime();
 		
 		minecraft.fontRendererObj.drawString("Day: " + (world.getWorldTime() < 24000 ? "1" : (world.getWorldTime() / 24000 + 1)), w - 60 , h - 15, 0xffffff);
-		System.out.println("Height" + h);
-		System.out.println("Width" + w);
 		
 		if(ConfigurationFile.debug == true)
 		{

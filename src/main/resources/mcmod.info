@@ -3,7 +3,7 @@
   "modid": "daytracker",
   "name": "Day Tracker",
   "description": "A simple mod that adds a Day counter to your Minecraft!",
-  "version": "V1.1",
+  "version": "V1.2",
   "mcversion": "${mcversion}",
   "url": "http://www.joshj5hawk.com/minecraftmods",
   "updateUrl": "",
